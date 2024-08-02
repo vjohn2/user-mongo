@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
-          scp -i private_key.pem target/your-app.jar $USER@$HOST:/home/$USER/
+          scp -i private_key.pem target/user-mongo-1.0.jar $USER@$HOST:/home/$USER/
  
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
